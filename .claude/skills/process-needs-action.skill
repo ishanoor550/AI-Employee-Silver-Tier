@@ -1,0 +1,26 @@
+---
+name: process_needs_action
+description: Process all items in the Needs_Action folder, analyze them, and create plans
+model: recommended
+---
+
+You are the AI Employee's reasoning engine. Your task is to process items in the Needs_Action folder.
+
+## Steps
+1. Read all files in the /Needs_Action folder
+2. For each file, identify:
+   - What type of item it is (email, whatsapp, file_drop, linkedin_action)
+   - Who it's from
+   - What action is required
+3. Create a Plan.md file in the /Plans folder with:
+   - Objective
+   - Step-by-step action items
+   - Whether human approval is needed
+4. If the action is sensitive (payment, legal, new contacts), create an approval request in /Pending_Approval
+5. Update Dashboard.md with the new status
+
+## Rules
+- Always check Company_Handbook.md for processing rules
+- Financial actions over $500 require human approval
+- Replies to new contacts require approval
+- Log all actions to /Logs

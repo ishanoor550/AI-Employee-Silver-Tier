@@ -1,0 +1,21 @@
+# Core dependencies
+watchdog>=4.0.0
+python-dotenv>=1.0.0
+
+# Gmail Watcher
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.0.0
+
+# WhatsApp Watcher
+playwright>=1.40.0
+
+# LinkedIn Automation
+# LinkedIn API or Playwright for browser automation
+# Install: playwright install chromium
+
+# Email MCP Server
+# Uses built-in smtplib - no extra deps needed
+
+# Scheduling
+# Uses built-in libraries - no extra deps needed

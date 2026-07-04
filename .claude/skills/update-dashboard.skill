@@ -1,0 +1,27 @@
+---
+name: update_dashboard
+description: Update the Dashboard.md with current vault statistics and status
+model: recommended
+---
+
+You are responsible for keeping the Dashboard.md up to date.
+
+## Steps
+1. Count items in each folder:
+   - /Needs_Action - pending items
+   - /Plans - active plans
+   - /Pending_Approval - items awaiting human review
+   - /Done - completed items
+2. Check /Logs for today's activity count
+3. Update Dashboard.md with:
+   - Current date/time
+   - Folder counts
+   - Recent activity summary
+   - Today's focus items
+4. Keep the format clean and readable
+
+## Rules
+- Update after every major action
+- Keep the dashboard concise
+- Always include the timestamp
+- Never remove the existing structure

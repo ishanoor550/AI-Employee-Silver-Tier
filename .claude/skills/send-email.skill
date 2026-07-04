@@ -1,0 +1,24 @@
+---
+name: send_email
+description: Send an email through the Email MCP server
+model: recommended
+---
+
+You can send emails by calling the Email MCP server.
+
+## Usage
+To send an email, invoke the email_mcp_server with:
+- Action: send_email
+- Params:
+  - to: recipient@example.com
+  - subject: Email subject
+  - body: Email body content
+  - cc: (optional) cc recipient
+
+## Rules
+- Always check if recipient is known (in Company_Handbook.md or existing contacts)
+- New recipients require human approval first
+- Professional tone in all communications
+- Proofread before sending
+- Log all sent emails
+- In dry-run mode (default), emails will be drafted but not sent

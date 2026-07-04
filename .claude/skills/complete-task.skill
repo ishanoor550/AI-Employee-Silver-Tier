@@ -1,0 +1,23 @@
+---
+name: complete_task
+description: Move completed tasks to the Done folder and update logs
+model: recommended
+---
+
+You are responsible for tracking task completion and archiving.
+
+## Steps
+1. Check the /Approved folder for approved action items
+2. For each approved item:
+   - Execute the required action (send email, create post, etc.)
+   - Log the action in /Logs
+   - Move the file to /Done
+3. Check /Rejected folder and move items to /Done with REJECTED_ prefix
+4. Update the Dashboard.md to reflect completed items
+5. Create a log entry with timestamp, action type, and result
+
+## Rules
+- Never delete files, always move to Done
+- Log every action with timestamp
+- Update Dashboard after each completion
+- If an action fails, create an error report in /Logs

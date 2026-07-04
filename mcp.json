@@ -1,0 +1,17 @@
+{
+  "servers": [
+    {
+      "name": "email",
+      "command": "python",
+      "args": ["email_mcp_server.py"],
+      "env": {
+        "SMTP_SERVER": "smtp.gmail.com",
+        "SMTP_PORT": "587",
+        "SMTP_USER": "",
+        "SMTP_PASS": "",
+        "DRY_RUN": "true",
+        "VAULT_PATH": "."
+      }
+    }
+  ]
+}
