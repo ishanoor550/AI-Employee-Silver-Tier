@@ -1,0 +1,19 @@
+{
+  "name": "end-of-day-summary",
+  "enabled": true,
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 19 * * 1-5",
+    "tz": "Asia/Karachi"
+  },
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "End-of-Day Summary: Check the AI_Employee_Vault directory. Look at Inbox/, Plans/, Needs_Action/, Pending_Approval/ for outstanding items. Summarize: (1) what needs attention, (2) pending approvals, (3) what should be prioritized tomorrow. Keep it concise — 5 lines max. Output only the summary.",
+    "lightContext": true
+  },
+  "delivery": {
+    "mode": "announce",
+    "channel": "last"
+  }
+}
